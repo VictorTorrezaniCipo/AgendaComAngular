@@ -1,0 +1,33 @@
+﻿<h1>Consulta de contatos</h1>
+
+<br />
+
+<!--<p>
+    <a ng-href="#!/clientes/novo" class="btn btn-default">Novo</a>
+</p>-->
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>UF</th>
+            <th>Celular</th>
+            <th>Grau de parentesco</th>
+        </tr>
+    </thead>
+    <tbody>       <!--Variável comum-->
+        <tr ng-repeat="contatos in cont.registros">
+            <td>{{contatos.Nome}}</td>
+            <td>{{contatos.Cidade}}</td>
+            <td>{{contatos.UF}}</td>
+            <td>{{contatos.Celular}}</td>
+            <td>{{contatos.GrauDeParentesco}}</td>
+            <!--<td>
+                <a ng-click="cli.excluir(cliente)">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </a>
+            </td>-->
+        </tr>
+    </tbody>
+</table>
